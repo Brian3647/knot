@@ -4,10 +4,10 @@
 
 ## Example of use
 
-To use `knot` quickly, it'd advised to include it in `alias`es:
+To use `knot` quickly, it's advised to include it as an `alias`:
 
 ```sh
-# file: .bashrc
+# file: .bashrc/.zshrc/...
 alias mv='knot --run /usr/bin/mv'
 ```
 
