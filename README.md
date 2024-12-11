@@ -12,16 +12,16 @@ alias mv='knot --run /usr/bin/mv'
 ```
 
 ```sh
-$ knot project my_dependency
+$ knot new project my_dependency
 #=> [successfully created knot]
 $ mv my_dependency my_new_cool_name
 #=> knot> warning! `project` depends on `my_dependency`.
 #=> knot> moving it might break functionality.
 #=> knot> continue anyways? [yN]: y
 #=> knot> ran successfully — please consider updating the dependency using `knot --change`.
-$ knot --change my_dependency new_cool_name
+$ knot change my_dependency new_cool_name
 #=> [successfully renamed dependency]
-$ knot --remove project *
+$ knot remove project *
 #=> [successfully removed all dependencies]
 $ mv new_cool_name new_different_name
 $
